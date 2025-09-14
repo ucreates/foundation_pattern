@@ -9,7 +9,7 @@ public class Observer : BaseObserver
     public override void Update()
     {
         CallGraph.GetInstance().Enter();
-        CallGraph.GetInstance().Log($"{Name}'s current subject state is {this.Subject.State}");
+        CallGraph.GetInstance().Log($"{Name}'s current subject state is {this.ObserverSubject.State}");
         CallGraph.GetInstance().Leave();
     }
 }

@@ -1,6 +1,6 @@
 namespace Pattern.Gof.Observer;
 
-public abstract class BaseSubject
+public abstract class BaseObserverSubject
 {
     public string State { get; set; } = string.Empty;
     public List<BaseObserver> ObserverList { get; private set; } = new List<BaseObserver>();

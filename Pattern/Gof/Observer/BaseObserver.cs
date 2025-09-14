@@ -3,12 +3,12 @@ namespace Pattern.Gof.Observer;
 public abstract class BaseObserver
 {
     public string Name { get; set; } = string.Empty;
-    public BaseSubject Subject { get; private set; } = null;
+    public BaseObserverSubject ObserverSubject { get; private set; } = null;
 
-    public void Attach(BaseSubject subject)
+    public void Attach(BaseObserverSubject observerSubject)
     {
         CallGraph.GetInstance().Enter();
-        this.Subject = subject;
+        this.ObserverSubject = observerSubject;
         CallGraph.GetInstance().Leave();
     }
 

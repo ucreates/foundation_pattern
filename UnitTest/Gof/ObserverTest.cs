@@ -10,7 +10,7 @@ public class ObserverTest
     {
         CallGraph.GetInstance().Initialize();
         CallGraph.GetInstance().Enter();
-        var subject = new Subject();
+        var subject = new ObserverSubject();
         for (int i = 0; i < 5; i++)
         {
             var observer = new Observer()
@@ -34,7 +34,7 @@ public class ObserverTest
     {
         CallGraph.GetInstance().Initialize();
         CallGraph.GetInstance().Enter();
-        var subject = new Subject();
+        var subject = new ObserverSubject();
         for (int i = 0; i < 5; i++)
         {
             var observer = new Observer()
@@ -71,7 +71,7 @@ public class ObserverTest
     {
         CallGraph.GetInstance().Initialize();
         CallGraph.GetInstance().Enter();
-        var subject = new Subject();
+        var subject = new ObserverSubject();
         for (int i = 0; i < 5; i++)
         {
             var observer = new Observer()
